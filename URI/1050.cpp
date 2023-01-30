@@ -1,25 +1,40 @@
-#include <stdio.h>
-int main()
-{
-   int N;
-    scanf("%d",&N);
-    if(N==61)
-        printf("Brasilia\n");
-    else if(N==71)
-        printf("Salvador\n");
-    else if(N==11)
-        printf("Sao Paulo\n");
-    else if(N==21)
-        printf("Rio de Janeiro\n");
-    else if(N==32)
-        printf("Juiz de Fora\n");
-    else if(N==19)
-        printf("Campinas\n");
-    else if(N==27)
-        printf("Vitoria\n");
-    else if(N==31)
-        printf("Bela Horizonte\n");
-    else
-        printf("DDD nao cadastrado\n");
-    return 0;
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+    int ddd;
+    cin >> ddd;
+    switch(ddd){
+              case 11:
+                   cout << "Sao Paulo"<<endl;
+                   break;
+              case 19:
+                   cout << "Campinas"<<endl;
+                   break;
+              case 21:
+                   cout << "Rio de Janeiro"<<endl;
+                   break;
+              case 27:
+                   cout << "Vitoria"<<endl;
+                   break;
+              case 31:
+                   cout << "Belo Horizonte"<<endl;
+                   break;
+              case 32:
+                   cout << "Juiz de Fora"<<endl;
+                   break;
+              case 61:
+                   cout << "Brasilia"<<endl;
+                   break;
+              case 71:
+                   cout << "Salvador"<<endl;
+                   break;
+              default:
+                      cout << "DDD nao cadastrado"<<endl;
+                      break;
+
+    }
+    
+return 0;
 }
